@@ -13,18 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
   let isTestActive = true;
 
   // ✅ Add toggle for light/dark mode
-  const toggleCheckbox = document.querySelector("#toggle");
 
-  toggleCheckbox.addEventListener("change", () => {
-    const body = document.body;
-    if (toggleCheckbox.checked) {
-      // Light mode
-      body.style.backgroundColor = "#f8fafc";
-      body.style.color = "#111";
+  const toggle = document.getElementById("toggle");
+
+  toggle.addEventListener("change", () => {
+    if (!toggle.checked) {
+      // Dark Mode
+      document.body.style.backgroundColor = "#111";
+      document.body.style.color = "#f8fafc";
     } else {
-      // Dark mode
-      body.style.backgroundColor = "#111";
-      body.style.color = "#f8fafc";
+      // Light Mode
+      document.body.style.backgroundColor = "#f8fafc";
+      document.body.style.color = "#111";
     }
   });
 
