@@ -12,6 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // 🔧 Add flag to control typing permission
   let isTestActive = true;
 
+  // ✅ Add toggle for light/dark mode
+  const toggleCheckbox = document.querySelector("#toggle");
+
+  toggleCheckbox.addEventListener("change", () => {
+    const body = document.body;
+    if (toggleCheckbox.checked) {
+      // Light mode
+      body.style.backgroundColor = "#f8fafc";
+      body.style.color = "#111";
+    } else {
+      // Dark mode
+      body.style.backgroundColor = "#111";
+      body.style.color = "#f8fafc";
+    }
+  });
+
   function createTypingText() {
     paragraph.split("").forEach((char, index) => {
       const span = document.createElement("span");

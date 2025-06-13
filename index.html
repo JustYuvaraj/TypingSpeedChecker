@@ -11,10 +11,48 @@
       rel="stylesheet"
     />
 
-    <!--CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div
+      style="
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        gap: 1rem;
+        z-index: 50;
+      "
+    >
+      <!-- Toggle Button -->
+      <div >
+        <label class="switch">
+          <input id="toggle" type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <!-- GitHub Button -->
+      <a
+        href="https://github.com/JustYuvaraj/TypingSpeedChecker"
+        target="_blank"
+        aria-label="View source on GitHub"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 12px;
+          background: #000;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 6px;
+        "
+      >
+        ⭐ GitHub
+      </a>
+    </div>
+
     <div class="min-h-screen bg-gray-100 flex items-center justify-center">
       <div class="container bg-white rounded-lg shadow-md p-8">
         <div class="min-h-screen bg-gray-100">
@@ -93,7 +131,6 @@
             </div>
 
             <!-- Typing Area -->
-
             <div
               id="typing-text"
               tabindex="0"
@@ -103,19 +140,33 @@
 
             <!-- Reset Button -->
             <div class="flex justify-center">
-  <button class="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-         class="lucide lucide-rotate-ccw w-4 h-4" aria-hidden="true">
-      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
-      <path d="M3 3v5h5"></path>
-    </svg>
-    Reset Test
-  </button>
+              <button
+                class="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-rotate-ccw w-4 h-4"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+                  ></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+                Reset Test
+              </button>
             </div>
-
           </div>
         </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
