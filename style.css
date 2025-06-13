@@ -1,0 +1,280 @@
+/* ========================
+   🌐 Base Styling
+======================== */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #111;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#typing-text {
+  user-select: none;
+}
+
+/* ========================
+   🔤 Typography
+======================== */
+.font-bold {
+  font-weight: bold;
+}
+
+.font-mono {
+  font-family: monospace;
+}
+
+.text-4xl {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+/* ========================
+   🎨 Text Colors
+======================== */
+.text-center {
+  text-align: center;
+}
+
+.text-muted-foreground {
+  color: #6b7280;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.text-blue-600 {
+  color: #2563eb;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.text-foreground {
+  color: #1f2937;
+}
+
+/* ========================
+   🎨 Background Colors
+======================== */
+.bg-card {
+  background-color: #ffffff;
+}
+
+.bg-muted {
+  background-color: #f3f4f6;
+}
+
+.bg-green-50 {
+  background-color: #ecfdf5;
+}
+
+.bg-red-50 {
+  background-color: #fef2f2;
+}
+
+.bg-blue-200 {
+  background-color: #bfdbfe;
+}
+
+/* ========================
+   🟦 Borders
+======================== */
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.border-border {
+  border-color: #d1d5db;
+}
+
+.border-green-200 {
+  border-color: #bbf7d0;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* ========================
+   📦 Padding
+======================== */
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+/* ========================
+   📐 Margin & Gap
+======================== */
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* ========================
+   🔁 Vertical Spacing
+======================== */
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
+
+/* ========================
+   📐 Layout & Grid
+======================== */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\:grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ========================
+   ⌨️ Focus & Cursor
+======================== */
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:ring-2:focus {
+  outline: 2px solid #3b82f6;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+/* ========================
+   📏 Size & Line Height
+======================== */
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
+/* ========================
+   ⚡ Transitions
+======================== */
+.transition-all {
+  transition: all 0.15s ease-in-out;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+/* ========================
+   💫 Animations
+======================== */
+.animate-pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

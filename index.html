@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div class="container bg-white rounded-lg shadow-md p-8">
+        <div class="min-h-screen bg-gray-100">
+          <div class="max-w-4xl mx-auto p-6 space-y-8">
+            <div class="text-center">
+              <div class="flex items-center justify-center gap-2 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-zap w-6 h-6 text-blue-600"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                  ></path>
+                </svg>
+                <h1 class="text-3xl font-bold">Typing Speed Test</h1>
+              </div>
+              <p class="text-gray-500">Test your typing speed and accuracy</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <!-- TIMER -->
+              <div>
+                <div
+                  class="text-gray-500 flex justify-center items-center gap-1 mb-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-timer w-4 h-4"
+                    aria-hidden="true"
+                  >
+                    <line x1="10" x2="14" y1="2" y2="2"></line>
+                    <line x1="12" x2="15" y1="14" y2="11"></line>
+                    <circle cx="12" cy="14" r="8"></circle>
+                  </svg>
+                  <span>Time</span>
+                </div>
+                <div id="timer" class="text-2xl font-semibold">0:00</div>
+              </div>
+
+              <!-- WPM -->
+              <div>
+                <div class="text-gray-500 mb-1">WPM</div>
+                <div id="wpm" class="text-2xl font-bold text-green-600">0</div>
+              </div>
+
+              <!-- Accuracy -->
+              <div>
+                <div class="text-gray-500 mb-1">Accuracy</div>
+                <div id="accuracy" class="text-2xl font-bold text-blue-600">
+                  0%
+                </div>
+              </div>
+
+              <!-- Characters -->
+              <div>
+                <div class="text-gray-500 mb-1">Characters</div>
+                <div id="charCount" class="text-2xl font-bold">0/0</div>
+              </div>
+            </div>
+
+            <!-- Typing Area -->
+
+            <div
+              id="typing-text"
+              tabindex="0"
+              class="font-mono text-xl leading-relaxed min-h-[200px] p-6 bg-gray-100 rounded border outline-none focus:ring-2 focus:ring-blue-500 cursor-text"
+              style="overflow-wrap: break-word"
+            ></div>
+
+            <!-- Reset Button -->
+            <div class="flex justify-center">
+  <button class="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-rotate-ccw w-4 h-4" aria-hidden="true">
+      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+      <path d="M3 3v5h5"></path>
+    </svg>
+    Reset Test
+  </button>
+            </div>
+
+          </div>
+        </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
